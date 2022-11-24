@@ -1,0 +1,99 @@
+shift + 1 = HTML TEMPLATE
+inside body i will add script tag. 
+example: <script src="script.js"></script>
+Objects: 
+synatx: {
+    "key": "value"
+}
+example: 
+var obj = {
+    name: "john",
+    age:  20
+}
+console.log(obj)
+
+//for adding key and value in the above code
+var obj = {
+    name: "john",
+    age:  20
+}
+synatx: objectname.keyname = value
+example:
+obj.gender = "male"
+
+//for printing the particular object key and value.
+syntax: objectname.keyname
+example:
+console.log(obj.name)
+
+//can we give an array in the objects?...
+yes
+example:
+var obj = {
+    name: "John",
+    age: 20
+    gender: "male"
+    attendance : ["mon","tues","wed","thu"]
+}
+//for printing the key in array
+var obj = {
+    name: "John",
+    age: 20
+    gender: "male"
+    attendance : ["mon","tues","wed","thu"]
+}
+for(var i =0;i<obj.attendance.length;i++){
+    console.log(obj.attendance[i]);
+}
+
+//JSON: JavaScript Object Notation.
+var obj = {
+    "name": "John",
+    "age": "20"
+    "gender": "male"
+   }
+//Array of objects:
+var arr=[
+   person1: {
+        "name": "John",
+        "age": "20
+     },
+    person 2: {
+        "name": "Doe",
+        "age": "21"
+     },
+   person3:  {
+        "name": "ram",
+        "age": "22"
+     },
+   person 3:  {
+        "name": "rupan",
+        "age": "23"
+     }
+]
+ for(var i=0;i<arr.length;i++){
+     console.log(arr[i].name,arr[i].age);
+  }
+
+
+//Hoisting developer mistake
+console.log(a);
+var a= 10;
+var b= 6;
+console.log(b);
+//scope and block variable let and const
+
+//copy by value
+it is applicaple only to primitive data types.
+primitive data types : numbers , strings and booleans.
+var a = 23;
+var b =a ;
+a =24;
+console.log(a);
+
+//copy by reference 
+it is applicaple to complex / user defined data types.
+var arr=[23,24,25,26]
+var arr1 = arr;
+arr1[0]=456;
+console.log(arr1[0]);
